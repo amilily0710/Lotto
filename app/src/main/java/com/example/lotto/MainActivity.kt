@@ -14,9 +14,9 @@ class MainActivity : AppCompatActivity() {
           val intent = Intent(this, ConstellationActivity::class.java)
           startActivity(intent)}
 
-          findViewById<View>(R.id.NumberGeneration).setOnClickListener {
-              val intent = Intent(this, ConstellationActivity::class.java)
-              startActivity(intent)
+        findViewById<View>(R.id.NumberGeneration).setOnClickListener {
+            val intent = Intent(this, NameActivity::class.java)
+            startActivity(intent)
       }
     }
 }
