@@ -12,7 +12,11 @@ class MainActivity : AppCompatActivity() {
 
       findViewById<View>(R.id.ConstellationCard).setOnClickListener {
           val intent = Intent(this, ConstellationActivity::class.java)
-          startActivity(intent)
+          startActivity(intent)}
+
+          findViewById<View>(R.id.NumberGeneration).setOnClickListener {
+              val intent = Intent(this, ConstellationActivity::class.java)
+              startActivity(intent)
       }
     }
 }
