@@ -10,7 +10,7 @@ class NameActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_name)
 
-        val btnGoName = findViewById<Button>(R.id.CardNumber)
+        val btnGoName = findViewById<Button>(R.id.btnGoName)
         btnGoName.setOnClickListener { 
             startActivity(Intent(this, ResultActivity::class.java))
             
