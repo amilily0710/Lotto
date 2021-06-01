@@ -11,6 +11,7 @@ class ResultActivity : AppCompatActivity() {
         setContentView(R.layout.activity_result)
 
         val result = intent.getIntegerArrayListExtra("result")
+        val strConstellation = intent.getStringExtra("constellation")
         //   if (result == null){
         //      return
         //      result.sort()
@@ -51,7 +52,7 @@ class ResultActivity : AppCompatActivity() {
         val imageView5 = findViewById<ImageView>(R.id.imageView5)
         val imageView7 = findViewById<ImageView>(R.id.imageView7)
         val imageView8 = findViewById<ImageView>(R.id.imageView8)
-        imageView3.setImageResource(lottoBallImageStartId + result_sorted[0]!! - 1)
+        imageView3.setImageResource(lottoBallImageStartId + (result_sorted[0] - 1))
         imageView4.setImageResource(lottoBallImageStartId + result_sorted[1] - 1)
         imageView5.setImageResource(lottoBallImageStartId + result_sorted[2] - 1)
         imageView7.setImageResource(lottoBallImageStartId + result_sorted[3] - 1)
